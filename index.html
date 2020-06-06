@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Homepage</title>
+      <link href="styles/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+      <header id="fixed-header">
+          <nav>
+              <h1>
+                  Test
+              </h1>
+
+          </nav>
+      </header>
+      <section id="stock-tickers" class="stock-tickers">
+        <div class="stock-selections">
+            <div><input list="stocks" name="stock-pick1" id="stock-pick1" class="stock-input"></div>
+            <div><input list="stocks" name="stock-pick2" id="stock-pick2" class="stock-input"></div>
+            <div><input list="stocks" name="stock-pick3" id="stock-pick3" class="stock-input"></div>
+            <div><input list="stocks" name="stock-pick4" id="stock-pick4" class="stock-input"></div>
+            <datalist id="stocks">
+                <option value="EOS">
+            </datalist>
+
+        </div>  
+        <div class='cascading'>
+            <div><p class="ticker-one green">ticker1</p></div>
+            <div><p class="ticker-two red">ticker2</p></div>
+            <div><p class="ticker-three">ticker3</p></div>
+            <div><p class="ticker-four">ticker4</p></div>
+        </div>
+
+      </section>
+      <main>
+          <section id="area-one" class="large-column box">
+              <h3>
+                  News
+              </h3><hr>
+              <section class="content">
+                  <div class='test'>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                  <div>5</div>
+              </section>
+
+          </section>
+          <section id="area-two" class="large-column box">
+              <h3>
+                  Stories
+              </h3><hr>
+              <section class="content">
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                  <div>5</div>
+              </section>
+
+          </section>
+          <section id="area-three" class="large-column box">
+              <h3>
+                  Updates
+              </h3><hr>
+              <section class="content">
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                  <div>5</div>
+              </section>
+
+          </section>
+      </main>
+      <footer>
+
+      </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

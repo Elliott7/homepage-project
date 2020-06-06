@@ -1,0 +1,178 @@
+:root {
+    /* --border-color: green; */
+    /* --background-color: beige; */
+    --primary-color: #0b0c10;
+    --navy-blue: #1F2833;
+    --light-gray: #C5C6C7;
+    --neon-blue: #66FCF1;
+    --gray-neon: #45A29E;
+
+}
+
+
+html{
+    /* background-image: url("/images/hex9.jpg"); */
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    min-height: 100%;
+}
+
+header {
+    height: 60px;
+    background-color: var(--navy-blue);
+    border: 2px solid var(--gray-neon);
+    color: var(--neon-blue);
+    /* position: sticky; */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+.box {
+    border: 2px solid var(--neon-blue);
+    background-color: var(--navy-blue);
+    flex-basis: 700px;
+    min-width: 15vw;
+    max-width: 30vw;
+    min-height: 60vh;
+    margin: 20px;
+    
+}
+.div-content{
+    margin: 10px 5px 10px 5px;
+}
+
+hr {
+    color: var(--neon-blue);
+    margin: 0px;
+}
+
+.content div{
+    min-height: 75px;
+    max-height: 150px;
+    text-align: justify;
+    padding: 10px;
+    border-bottom: 2px solid var(--neon-blue)
+}
+
+section {
+    color: var(--neon-blue);
+}
+
+.stock-tickers {
+    height: 140px;
+    background-color: var(--navy-blue);
+    border: 2px solid var(--gray-neon);
+    color: var(--neon-blue);
+    max-height: 140px;
+    min-height: 140px;
+    display: flex;
+    align-content: space-between;
+}
+
+footer {
+    border: 2px solid var(--neon-blue);
+    background-color: var(--navy-blue);
+    position: relative;
+    height: 50px;
+    /* margin-top: -50px; */
+    min-height: 50px;
+    min-width: 99.75%;
+}
+
+section div div, section div div p {
+    /* border: 1px solid var(--neon-blue); */
+    margin: 2px 0px 2px 0px;
+    height: 30px;
+}
+.cascading div{
+    width: 85vw;
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.cascading div p {
+    width: 80vw;
+    transform: translateX(-10%);
+    animation-name: "stock-ticker";
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes stock-ticker {
+    0% {
+        transform: translateX(107%);
+    }
+    100% {
+        transform: translateX(-7%);
+    }
+
+}
+
+.ticker-one{
+    animation-delay: 0s;
+}
+
+.ticker-two{
+    animation-delay: 5s;
+}
+
+.ticker-three{
+    animation-delay: 10s;
+}
+
+.ticker-four{
+    animation-delay: 15s;
+}
+
+.green {
+    color: rgb(8, 243, 0);
+}
+.red {
+    color: rgba(255, 0, 0, 0.658);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .box {
+        margin: 20px 5px 20px 5px;
+        background-color: red;
+    }
+}
